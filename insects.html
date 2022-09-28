@@ -8,6 +8,27 @@
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <style>
+    .container-fluid {
+      border: 1px solid rgb(211, 88, 88);
+      border-radius: 8px;
+      padding: 6px;
+    }
+    table, th, td {
+      border: 1px solid;
+      text-align: center;
+    }
+    tr:nth-child(even) {background-color: #7dc9da;}
+    tr:nth-child(odd) {background-color: #de3c72;}
+    tr:hover{background-color: rgb(176, 230, 105) ;}
+    th{
+      background-color: rgba(213, 164, 135, 0.838);
+    }
+    .dropdown{
+      padding: 10px;
+      border:1px solid rgba(0, 0, 0, 0.404);
+    }
+    </style>
 </head>
 <body>
     <h1>Insects by Rohith Reddy Annadi</h1>
@@ -29,8 +50,96 @@
     <p>
         The first row with letters breaks first
     </p>
+    <div class = "container">
+      <img src="ant.jpg" class="img-fluid" alt="ANT" width="200px" height="200px">
+      <img src="nit.jpg" " class="img-fluid" alt="NIT" width="200px" height="200px">
+      <img src="netwing.jpg" class="img-fluid" alt="NETWING" width="200px" height="200px">
+    </div>
+    <div class = "container">
+      <img src="ant.jpg" class="img-thumbnail" alt="ANT" width="200px" height="200px">
+      <img src="nit.jpg" " class="img-thumbnail" alt="NIT" width="200px" height="200px">
+      <img src="netwing.jpg" class="img-thumbnail" alt="NETWING" width="200px" height="200px">
+    </div>
 
-
-
+    <table class = "table">
+      <caption>Letters, Cities and Rivers</caption>
+      <thead>
+        <tr>
+          <th scope="col">#</th>
+          <th scope="col">Letter</th>
+          <th scope="col">Insect</th>
+          <th scope="col">City</th>
+          <th scope="col">River</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <th scope="row">1</th>
+          <td>A</td>
+          <td>ANT</td>
+          <td>Amsterdam</td>
+          <td>Aberjona River</td>
+        </tr>
+        <tr>
+          <th scope="row">2</th>
+          <td>N</td>
+          <td>NIT</td>
+          <td>Newyork</td>
+          <td>Narmada River</td>
+        </tr>
+        <tr>
+          <th scope="row">3</th>
+          <td>N</td>
+          <td>NETWING</td>
+          <td>Nashville</td>
+          <td>Negro River</td>
+        </tr>
+        <tr>
+          <th scope="row">4</th>
+          <td>A</td>
+          <td>Aphid</td>
+          <td>Austin</td>
+          <td>Amazon River</td>
+        </tr>
+        <tr>
+          <th scope="row">5</th>
+          <td>D</td>
+          <td>DIPTERA</td>
+          <td>Detroit</td>
+          <td>Dan River</td>
+        </tr>
+        <tr>
+          <th scope="row">6</th>
+          <td>I</td>
+          <td>INCHWORM</td>
+          <td>Irving</td>
+          <td>Illinois River</td>
+        </tr>
+    </table>
+    <h1>Buttons</h1>
+    
+      <button type="button" class="btn btn-outline-primary">A</button>
+      <button type="button" class="btn btn-outline-primary">N</button>
+      <button type="button" class="btn btn-outline-primary">N</button>
+      <button type="button" class="btn btn-outline-primary">A</button>
+      <button type="button" class="btn btn-outline-primary">D</button>
+      <button type="button" class="btn btn-outline-primary">I</button>
+    
+    <br>
+  <h1>Button Group</h1>
+    <div class="btn-toolbar" role="toolbar" aria-label="Buttons Group for Letters">
+      <div class="btn-group me-2" role="group" aria-label="First Group with Success">
+        <button type="button" class="btn btn-success">A</button>
+        <button type="button" class="btn btn-success">N</button>
+        <button type="button" class="btn btn-success">N</button>
+      </div>
+      <div class="btn-group me-2" role="group" aria-label="Second group with alert coloring">
+        <button type="button" class="btn btn-warning">A</button>
+        <button type="button" class="btn btn-warning">D</button>
+      </div>
+      <div class="btn-group" role="group" aria-label="Third group with danger coloring">
+        <button type="button" class="btn btn-danger">I</button>
+      </div>
+    </div>
 </body>
 </html>
